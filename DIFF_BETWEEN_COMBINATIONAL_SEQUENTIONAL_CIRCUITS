@@ -1,0 +1,25 @@
+🔍 Combinational vs. Sequential Circuits – A must-know for RTL coding!
+
+🔹 Combinational Circuits
+✅ Output depends only on current inputs.
+✅ No memory, no clock required.
+✅ Used in adders, multiplexers, encoders, etc.
+✅ Implemented using assign statements in Verilog.
+
+💡 Example:
+
+verilog
+assign SUM = A + B; // Instantaneous computation
+
+🔹 Sequential Circuits
+✅ Output depends on current inputs + past states (memory).
+✅ Requires flip-flops & clock for synchronization.
+✅ Used in counters, registers, FSMs, etc.
+✅ Implemented using always @(posedge clk) in Verilog.
+
+💡 Example:
+
+verilog
+always @(posedge clk) count <= count + 1; // Updates on every clock cycle
+
+📌 Key Takeaway: Use combinational logic for fast computations and sequential logic when memory and state retention are required!
